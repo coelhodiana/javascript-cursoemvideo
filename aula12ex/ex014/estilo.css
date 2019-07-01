@@ -1,0 +1,44 @@
+body {
+    background: rgb(240, 151, 136);
+    font: normal 15pt Arial;
+    
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    color: rgb(30, 32, 34);
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(71, 15, 15, 0.2);
+}
+
+@media (max-width: 800px) {
+section {
+    background: white;
+    border-radius: 10px;
+    color: rgb(30, 32, 34);
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(71, 15, 15, 0.2);
+    }
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

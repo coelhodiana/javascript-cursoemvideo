@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background: rgb(116, 137, 252);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue'
+        window.document.write('Está escrito assim: ' + p1.innerHTML)
+        // var d = window.document.getElementById('msg')
+        // d.style.background = 'green'
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'pink'
+
+
+        /*
+        DOM = Document Object Model
+        é um conjunto de objetos dentro do navegador que da acesso aos componentes internos no website.
+
+        Árvore DOM
+         window
+            - location
+            - document
+                -- html
+                    --- head
+                        ---- meta
+                        ---- title
+                    --- body
+             - history
+
+        É possível selecionar elementos por:
+        - Marca:    getElementsByTagName()
+        - ID:       getElementById()
+        - Nome:     getElementsByName()
+        - Classe:   getElementsByClasseName()
+        - Seletor:  querySelector() ou querySelectorAll()
+
+
+        */
+
+    </script>
+</body>
+</html>

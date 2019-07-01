@@ -1,0 +1,12 @@
+Operadores
+
+- Aritméticos: + - * / % **
+- Relacionais: > < >= <= == != === !== (desigual restrito)
+- Lógicos: !(negação; operador unário) &&(conjunção 'e') ||(disjunção 'ou')
+- Ternário: <teste> ? <bloco verdadeiro> : <bloco falso>
+
+Ordem de precedência entre Operadores
+Aritmético
+Relacionais
+Lógicos (ordem entre operadores lógicos ! && ||)
+

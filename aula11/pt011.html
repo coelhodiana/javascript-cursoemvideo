@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>País</title>
+    <style>
+    body {
+        font: normal 14pt Arial;
+        background: rgb(152, 127, 233);
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <h2>Em qual país você mora?</h2>
+    <input type="text" id="local">
+    <input type="button" value="Enviar" onclick="pais()">
+    <div id="vive"></div>
+
+    <script>
+              
+        function pais() {
+            var local = window.document.querySelector('input#local')
+            var vive = window.document.querySelector('div#vive')
+            var localidade = (local.value.toLowerCase())
+
+            if (localidade == 'brasil') {
+                vive.innerHTML = `<p>Você é brasileiro</p>`
+            } else {
+                vive.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+       } 
+
+    </script>
+</body>
+</html>
