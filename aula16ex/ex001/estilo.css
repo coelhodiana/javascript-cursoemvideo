@@ -38,3 +38,7 @@ footer{
     justify-content: center;
     padding-top: 20px;
 }
+
+select {
+    width: 91%;
+}

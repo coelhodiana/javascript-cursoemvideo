@@ -17,7 +17,6 @@ section {
     width: 50%;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(71, 15, 15, 0.2);
-    text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -35,6 +34,5 @@ footer{
 #foto {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding-top: 20px;
 }
